@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RESERVACIONES
+    </title>
+    <style>
+        .product {
+            border: 1px solid #ddd;
+            padding: 16px;
+            margin: 16px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .buy-form {
+            display: none;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PROXIMAMENTE</h1>
+    <div id="products"> 
+
+        <!--- aqi se cambia el nombre del producto-->
+         <div class="product" onclick="openForm('CAMISA')">
+            <img src="https://i.etsystatic.com/22078654/r/il/736483/3114001390/il_fullxfull.3114001390_9mrc.jpg" alt="Producto " height="400" width="400">
+            <h2> ropa ropa camisa kreo</h2>
+            <p>$100k</p>
+        </div>
+        <div class="product" onclick="openForm('no es un pantalon cambia esto')">
+            <img src="https://i.ebayimg.com/images/g/vGoAAOSw~AlnlbRC/s-l1600.webp" alt="Producto " height="400" width="400">
+            <h2> ropa pantalon </h2>
+            <p>$200k</p>
+        </div>
+        <!-- Agrega más productos según sea necesario -->
+    </div>
+
+    <div id="buy-form" class="buy-form">
+        <h2> </h2>
+        <form action="#" method="post">
+            <label for="product-name">Producto:</label>
+            <input type="text" id="product-name" name="product-name" readonly><br><br>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Correo :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" required><br><br>
+            <button type="submit">Comprar</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm(productName) {
+            document.getElementById('product-name').value = productName;
+            document.getElementById('buy-form').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

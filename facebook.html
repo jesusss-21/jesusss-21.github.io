@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títulos Brillantes</title>
+    <style>
+        @keyframes brillo {
+            0% { text-shadow: 0 0 5px #ffd700; }
+            50% { text-shadow: 0 0 20px #ffd700; }
+            100% { text-shadow: 0 0 5px #ffd700; }
+        }
+
+        .brillante {
+            color: #ffd700; /* Color dorado */
+            animation: brillo 1.5s infinite;
+        }
+
+
+        @keyframes brilloNeon {
+            0%, 100% { text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f, 0 0 30px #00f, 0 0 35px #00f; }
+            50% { text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f; }
+        }
+
+        .neon {
+            color: #0a0a0a; /* Texto blanco */
+            animation: brilloNeon 1.5s infinite alternate;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="neon">Título Brillante en Dorado</h1>
+    <h2 class="brillante">Subtítulo Brillante en Dorado</h2>
+    <h3 class="brillante">Otro Subtítulo Brillante en Dorado</h3>
+</body>
+</html>

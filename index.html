@@ -1,213 +1,161 @@
-
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HILO URBANO</title>
-    <style>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>HILO URBANO</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Tienda</h1>
 
-.centrado {
-            text-align: center;
-        }
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
 
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
 
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="img/chamarra.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Chamara MHU gris claro</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="img/chamarra2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Chamarra MHU azul marino </h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="img/chamarra3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Chamarra HU blanco</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="img/gorro.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Gorro HU negro</h2>
+					<p class="price">$25</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="img/gorro2.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Gorro MHU negro</h2>
+					<p class="price">$25</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
 
-@keyframes brilloNeon {
-            0%, 100% { text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f, 0 0 30px #00f, 0 0 35px #00f; }
-            50% { text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f; }
-        }
-
-        .neon {
-            color: #d1cdcd; /* Texto blanco */
-            animation: brilloNeon 3.5s infinite alternate;
-        }
-
-
-
-
-
-
-
-
-
-
-
-@keyframes brillo {
-            0% { text-shadow: 0 0 5px #ffd700; }
-            50% { text-shadow: 0 0 20px #ffd700; }
-            100% { text-shadow: 0 0 5px #ffd700; }
-        }
-
-        .brillante {
-            color: #ffd700; /* Color dorado */
-            animation: brillo 1.5s infinite;
-        }
-
-
-
-
-
-
-
-
-        body {
-            background-color: #000;
-            color: #FFF;
-            font-family: Arial, sans-serif;
-        }
-        h1, h2, h3 {
-            color: #58afdd;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 1em;
-        }
-        .menu a {
-            color: #FFF;
-            padding: 1em;
-            text-decoration: none;
-        }
-        .menu a:hover {
-            background-color: #555;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #222;
-            border-radius: 8px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1 class="brillante centrado" >HILO URBANO</h1>
-    </header>
-    <!--- aqi empiexan los menus para agg la info-->
-    <nav class="menu">
-        <a href="#seccion1"> ACERCA DE NOSOTROS</a>
-        <a href="#seccion2"> NUESTRO PUBLICO </a>
-        <a href="#seccion3"> VISION Y MISION</a>
-    </nav>
-    <!--- estos sonn los menus cada seccion con numero corresponde a kada mennu kreo-->
-    <div class="container">
-        <section id="seccion1">
-            <h2 class="brillante">ACERCA DE NOSOTROS</h2>
-            <p> HILO URBANO es una microempresa de sociedad limitada la cual se especializará en ropa y accesorios urbanos con un estilo moderno, relajado y funcional. El enfoque será ofrecer prendas que reflejen la identidad de la cultura urbana, combinando comodidad, estilo y originalidad. Los productos podrían incluir:
-
-            </p>
-
-              <ul> 
-                <li>
-                    Ropa casual: camisetas, sudaderas, chaquetas, pantalones y jeans con diseños innovadores, patrones llamativos, o frases que conecten con la juventud y el estilo de vida urbano.
-                </li>
-                        <br>
-                      
-              </ul>
-
-              <h3 style="color: #DAA520"> ACESSORIOS </h3>
-              
-                 <ul>
-                     <li>
-                        gorras
-                     </li>
-                     <li>
-                        mochilas
-                     </li>
-                     <li>
-                        bufandas
-                     </li>
-                     <li>
-                        otros complementosque completen el look urbano
-                     </li>
-
-                 </ul>
-
-                 <h3 style="color: #DAA520">PRENDAS PERSONALIZADAS</h3>
-                 <p> Ofrecer la opción de personalizar algunas prendas (como camisetas o gorras) con nombres, frases o ilustraciones únicas.</p>
-
-                 <h3 style="color: #DAA520">EDICIONES LIMITADAS</h3>
-                 <P>Crear colecciones cápsula que sean exclusivas, para generar un sentido de comunidad y exclusividad.</P>
-
-                 <h3 style="color: #DAA520">ENFOQUE PRINCIPAL</h3>
-                 <p>  Una mezcla de moda y comodidad, ideal para personas que buscan estar a la moda sin perder practicidad.</p>
-
-
-
-
-
-
-
-        </section>
-        <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR>
-        <section id="seccion2">
-            <h2 class="brillante"> ¿A QUE PUBLICO NOS DIRIGIMOS?</h2>
-            <p>Hilo Urbano se dirige principalmente a jóvenes y adultos jóvenes entre 18 y 35 años que valoran la moda, la autoexpresión y el estilo urbano. Este público incluye:
-    
-            </p>
-            <h3 style="color: #DAA520">Estudiantes universitarios y jovenes adultos</h3>
-            <p>Buscan prendas que se adapten tanto a su vida diaria como a sus actividades sociales. Son personas que disfrutan de la cultura urbana, como el arte callejero, la música (hip hop, reggaetón, música electrónica), y los deportes urbanos. Estos individuos suelen estar al tanto de las últimas tendencias y buscan ropa que sea funcional y estilizada, permitiéndoles expresar su identidad y personalidad única.</p>
-            <h3 style="color: #DAA520">Amantes del streetweae</h3>
-            <p>Personas que siguen las tendencias de moda urbana, como el estilo streetwear, y buscan ropa cómoda pero con un toque de exclusividad y autenticidad. Este grupo valora la calidad y el diseño de las prendas, y tiende a preferir ediciones limitadas y piezas únicas que les permitan destacar. Además, son ávidos seguidores de marcas que reflejen sus valores y estilo de vida, lo que incluye sostenibilidad y responsabilidad social.</p>
-            <h3 style="color: #DAA520">Creativos y artistas urbanos</h3>
-            <p>Aquellos que están involucrados en actividades creativas como el diseño gráfico, la ilustración, la fotografía, y el graffiti. Estos individuos buscan ropa que no solo sea práctica para su trabajo, sino que también refleje su sensibilidad artística y creatividad. Valoran las colaboraciones con artistas y la oportunidad de personalizar sus prendas para hacerlas verdaderamente únicas.</p>
-            <h3 style="color: #DAA520">Entusiastas del deporte y el fitnessL</h3>
-            <p>Personas activas que practican deportes urbanos como el skateboarding, el parkour, y el ciclismo. Buscan ropa que sea duradera, cómoda y funcional para sus actividades físicas, pero que también mantenga un estilo moderno y atractivo para su vida diaria.
-
-               /p>
+            <div class="item">
+				<figure>
+					<img
+						src="img/camisa.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Camisa HU negro</h2>
+					<p class="price">$70</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            
            
 
-        </section>
-        <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR>
-        <section id="seccion3">
-            <h2 class="brillante">VISION Y MISION</h2>
-
-              <h3 style="color: #daa520"> VISION</h3>
-
-            <ul>
-
-                <li>
-                     "Convertirnos en una marca de ropa
-urbana líder, que represente la esencia de las
-calles y la creatividad de la juventud, brindando
-productos auténticos, cómodos y de alta calidad
-que reflejen el estilo de vida urbano en cada
-prenda."
-                </li>
-
-                <h3 style="color: #daa520">MISION</h3>
-             
-                <li>
 
 
-                    "Ofrecer moda urbana accesible y de
-                    calidad a jóvenes que buscan expresar su
-                    personalidad y estilo a través de sus prendas.
-                    En Hilo Hurbano nos comprometemos a crear
-                    productos que fusionen el arte de la calle con
-                    la comodidad, apoyando la autoexpresión y
-                    promoviendo una producción consciente y
-                    sostenible."
 
-                </li>
+		</div>
 
-            </ul>
-        </section>
-        <!--- aqi acaban los menus 
-        tienees q agg imagenes yyyy los enlaces a diferentes index o paginas lo q qeras jeje-->
-    </div>
-      <br>
-      <li>
-          <a href="reserva ahora1.html"> RESERVA YA!</a>
-      </li>
-
-      
-         
-
-
-</body>
+		<script src="index.js"></script>
+	</body>
 </html>

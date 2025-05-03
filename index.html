@@ -1,224 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HILO URBANO</title>
-    <style>
-
-.centrado {
-            text-align: center;
-        }
-
-        .titulo {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%; /* Ajusta el tamaño de la imagen si es necesario */
-            text-align: center; /* Alinea el texto dentro del elemento (opcional) */
-        }
-
-@keyframes brilloNeon {
-            0%, 100% { text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f, 0 0 30px #00f, 0 0 35px #00f; }
-            50% { text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f; }
-        }
-
-        .neon {
-            color: #d1cdcd; /* Texto blanco */
-            animation: brilloNeon 3.5s infinite alternate;
-        }
-
-
-
-
-
-
-
-
-
-
-
-@keyframes brillo {
-            0% { text-shadow: 0 0 5px #ffd700; }
-            50% { text-shadow: 0 0 20px #ffd700; }
-            100% { text-shadow: 0 0 5px #ffd700; }
-        }
-
-        .brillante {
-            color: #ffd700; /* Color dorado */
-            animation: brillo 1.5s infinite;
-        }
-
-
-
-
-
-
-
-
-        body {
-            
-            background-image: url(img/fondoalt.jpg);
-          /*  background-size: cover; 
-            background-repeat: no-repeat; */
-            background-position: center; 
-        
-            color: #FFF;
-            font-family: Arial, sans-serif;
-        }
-        h1, h2, h3 {
-            color: #58afdd;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 1em;
-        }
-        .menu a {
-            color: #FFF;
-            padding: 1em;
-            text-decoration: none;
-        }
-        .menu a:hover {
-            background-color: #555;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #222;
-            border-radius: 8px;
-        }
-    </style>
+    <title>Mojarras - Información y Animaciones</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
     <header>
-        <img src="img/HILO-URBANO-12-2-2025.png" alt="Título" class="titulo">
+        <h1>Las Mojarras</h1>
+        <p>Descubre todo sobre estos fascinantes peces</p>
     </header>
-    <!--- aqi empiexan los menus para agg la info-->
-    <nav class="menu">
-        <a href="#seccion1"> ACERCA DE NOSOTROS</a>
-        <a href="#seccion2"> NUESTRO PUBLICO </a>
-        <a href="#seccion3"> VISION Y MISION</a>
-    </nav>
-    <!--- estos sonn los menus cada seccion con numero corresponde a kada mennu kreo-->
-    <div class="container">
-        <section id="seccion1">
-            <h2 class="brillante">ACERCA DE NOSOTROS</h2>
-            <p> HILO URBANO es una microempresa de sociedad limitada la cual se especializará en ropa y accesorios urbanos con un estilo moderno, relajado y funcional. El enfoque será ofrecer prendas que reflejen la identidad de la cultura urbana, combinando comodidad, estilo y originalidad. Los productos podrían incluir:
 
-            </p>
-
-              <ul> 
-                <li>
-                    Ropa casual: camisetas, sudaderas, chaquetas, pantalones y jeans con diseños innovadores, patrones llamativos, o frases que conecten con la juventud y el estilo de vida urbano.
-                </li>
-                        <br>
-                      
-              </ul>
-
-              <h3 style="color: #DAA520"> ACESSORIOS </h3>
-              
-                 <ul>
-                     <li>
-                        gorras
-                     </li>
-                     <li>
-                        mochilas
-                     </li>
-                     <li>
-                        bufandas
-                     </li>
-                     <li>
-                        otros complementosque completen el look urbano
-                     </li>
-
-                 </ul>
-
-                 <h3 style="color: #DAA520">PRENDAS PERSONALIZADAS</h3>
-                 <p> Ofrecer la opción de personalizar algunas prendas (como camisetas o gorras) con nombres, frases o ilustraciones únicas.</p>
-
-                 <h3 style="color: #DAA520">EDICIONES LIMITADAS</h3>
-                 <P>Crear colecciones cápsula que sean exclusivas, para generar un sentido de comunidad y exclusividad.</P>
-
-                 <h3 style="color: #DAA520">ENFOQUE PRINCIPAL</h3>
-                 <p>  Una mezcla de moda y comodidad, ideal para personas que buscan estar a la moda sin perder practicidad.</p>
+    <section class="info">
+        <h2>¿Qué son las mojarras?</h2>
+        <p>
+            Producción de mojarra (acuicultura)
+            La mojarra es uno de los alimentos más populares y de consumo creciente en el mundo, loque ha originado que varios países se dediquen al cultivo de esta especie de alto valor comercial, esto se debe en parte a la sobre explotación de los recursos pesqueros que ha venido generando una demanda de los productos marinos de alta calidad en países desarrollados.
+            
+            Objetivo: Producir mojarra a gran escala, utilizando los recursos que puede ofrecer el lago de Temazcal, para disminuir los gastos de crecimiento disminuyendo el precio final al consumidor.
+            Incrementar la producción de producto nacional en busca de la disminución de importación de mojarra de otros países.
+            Misión: producir mojarra a menor precio para los consumidores, utilizando los recursos naturales a su alcance con una menor inversión
+            Visión:  beneficiar al productor y consumidor de mojarra tilapia, ofreciendo calidad y buen precio..</p>
+        <img src="img/mojarras.jpeg" alt="Imagen de una mojarra">
+    </section>
 
 
-
-
-
-
-
-        </section>
-        <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR>
-        <section id="seccion2">
-            <h2 class="brillante"> ¿A QUE PUBLICO NOS DIRIGIMOS?</h2>
-            <p>Hilo Urbano se dirige principalmente a jóvenes y adultos jóvenes entre 18 y 35 años que valoran la moda, la autoexpresión y el estilo urbano. Este público incluye:
-    
-            </p>
-            <h3 style="color: #DAA520">Estudiantes universitarios y jovenes adultos</h3>
-            <p>Buscan prendas que se adapten tanto a su vida diaria como a sus actividades sociales. Son personas que disfrutan de la cultura urbana, como el arte callejero, la música (hip hop, reggaetón, música electrónica), y los deportes urbanos. Estos individuos suelen estar al tanto de las últimas tendencias y buscan ropa que sea funcional y estilizada, permitiéndoles expresar su identidad y personalidad única.</p>
-            <h3 style="color: #DAA520">Amantes del streetweae</h3>
-            <p>Personas que siguen las tendencias de moda urbana, como el estilo streetwear, y buscan ropa cómoda pero con un toque de exclusividad y autenticidad. Este grupo valora la calidad y el diseño de las prendas, y tiende a preferir ediciones limitadas y piezas únicas que les permitan destacar. Además, son ávidos seguidores de marcas que reflejen sus valores y estilo de vida, lo que incluye sostenibilidad y responsabilidad social.</p>
-            <h3 style="color: #DAA520">Creativos y artistas urbanos</h3>
-            <p>Aquellos que están involucrados en actividades creativas como el diseño gráfico, la ilustración, la fotografía, y el graffiti. Estos individuos buscan ropa que no solo sea práctica para su trabajo, sino que también refleje su sensibilidad artística y creatividad. Valoran las colaboraciones con artistas y la oportunidad de personalizar sus prendas para hacerlas verdaderamente únicas.</p>
-            <h3 style="color: #DAA520">Entusiastas del deporte y el fitnessL</h3>
-            <p>Personas activas que practican deportes urbanos como el skateboarding, el parkour, y el ciclismo. Buscan ropa que sea duradera, cómoda y funcional para sus actividades físicas, pero que también mantenga un estilo moderno y atractivo para su vida diaria.
-
-               /p>
-           
-
-        </section>
-        <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR> <BR>
-        <section id="seccion3">
-            <h2 class="brillante">VISION Y MISION</h2>
-
-              <h3 style="color: #daa520"> VISION</h3>
-
-            <ul>
-
-                <li>
-                     "Convertirnos en una marca de ropa
-urbana líder, que represente la esencia de las
-calles y la creatividad de la juventud, brindando
-productos auténticos, cómodos y de alta calidad
-que reflejen el estilo de vida urbano en cada
-prenda."
-                </li>
-
-                <h3 style="color: #daa520">MISION</h3>
-             
-                <li>
-
-
-                    "Ofrecer moda urbana accesible y de
-                    calidad a jóvenes que buscan expresar su
-                    personalidad y estilo a través de sus prendas.
-                    En Hilo Hurbano nos comprometemos a crear
-                    productos que fusionen el arte de la calle con
-                    la comodidad, apoyando la autoexpresión y
-                    promoviendo una producción consciente y
-                    sostenible."
-
-                </li>
-
-            </ul>
-        </section>
-        <!--- aqi acaban los menus 
-        tienees q agg imagenes yyyy los enlaces a diferentes index o paginas lo q qeras jeje-->
-    </div>
-      <br>
-      <li>
-          <a href="index1.html"> RESERVA YA!</a>
-      </li>
-
-      
-         
-
-
+    <script src="script.js"></script>
 </body>
 </html>
